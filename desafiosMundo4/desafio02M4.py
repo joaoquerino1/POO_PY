@@ -27,7 +27,7 @@ class Churrasco:
         conteudo += f"\nRecomendo comprar {self.calculo_qtd_carne():.1f} kg de carne"  # Arredondado para 1 casa
         conteudo += f"\nO custo total será de R${self.calculo_custo_total():,.2f}"
         conteudo += f"\nCada pessoa pagará R${self.calculo_custo_indv():,.2f} para ajudar"
-        painel = Panel(conteudo, title=self.titulo)
+        painel = Panel(conteudo, title = self.titulo)
         print(painel)
 
 # Testes
