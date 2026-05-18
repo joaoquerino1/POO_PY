@@ -1,0 +1,28 @@
+from rich import print, inspect
+from classes import Pessoa, Aluno, Professor, Funcionario
+
+def main():
+    a1 = Aluno("João", 23, "Analise e Desenvolvimento de Sistemas", "EAD Unicesumar")
+    a1.fazerAniversario()
+    a1.fazerMatricula()
+    #inspect(a1, methods=True)
+
+    p1 = Professor("Gustavo", 35, "Programação", "Mestrado")
+    p1.fazerAniversario()
+    p1.darAula()
+
+    #inspect(p1, methods=True)
+
+    f1 = Funcionario("Maria", 28, "Secretária", "Administrativo")
+    f1.fazerAniversario()
+    f1.baterPonto()
+    #inspect(f1, methods=True)
+
+    a1.estudar()
+    p1.estudar()
+    f1.estudar()
+    
+
+if __name__ == "__main__":
+    main()
+    
